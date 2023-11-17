@@ -411,10 +411,11 @@ a.git-gabriel:hover {
   nav.menu_principal {
     border-top: 1px solid #2f85d64f;
 
-    width: 80%;
+    width: 100%;
+    max-width: 500px;
     padding-top: 0.6em;
 
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
   }
 }
@@ -428,16 +429,14 @@ a.git-gabriel:hover {
   div.box_anuncio_button {
     margin-top: 1.2em;
   }
-
-
 }
 @media screen and (max-width: 535px) {
-  nav.menu_principal {
-    width: fit-content;
-    justify-content: center;
-  }
-
   figure.imagem_banner img {
+    display: none;
+  }
+}
+@media screen and (max-width: 420px) {
+  nav.menu_principal {
     display: none;
   }
 }
